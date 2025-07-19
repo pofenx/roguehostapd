@@ -7,7 +7,7 @@ import collections
 import os
 import json
 try:
-    from configparser import ConfigParser as RawConfigParser  # Python 3
+    from configparser import RawConfigParser  # Python 3
 except ImportError:
     from ConfigParser import RawConfigParser  # Python 2
 
