@@ -7,10 +7,9 @@ import collections
 import os
 import json
 try:
-    
-    from configparser import ConfigParser as SafeConfigParser
+    from configparser import ConfigParser as SafeConfigParser  # Python 3
 except ImportError:
-    from ConfigParser import ConfigParser   # Python 2
+    from ConfigParser import SafeConfigParser  # Python 2
 
 
 def get_default_settings():
