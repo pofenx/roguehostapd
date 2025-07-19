@@ -6,11 +6,8 @@ import re
 import collections
 import os
 import json
-try:
-    from configparser import RawConfigParser  # Python 3
-except ImportError:
-    from ConfigParser import RawConfigParser  # Python 2
-
+# 只保留 Python 3 的导入方式
+from configparser import RawConfigParser
 
 def get_default_settings():
     """
